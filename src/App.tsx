@@ -1,5 +1,5 @@
 import "./App.css";
-import avatar from "./assets/images/avatar-jessica.jpeg";
+import avatar from "./assets/images/avatar.jpg";
 import SocialCard from "./components/SocialCard/SocialCard";
 
 export interface Link {
@@ -10,15 +10,15 @@ export interface Link {
 const socialLinks: Link[] = [
   {
     name: "GitHub",
-    link: "https://github.com/",
+    link: "https://github.com/WAudouin",
   },
   {
     name: "Frontend Mentor",
-    link: "https://frontendmentor.io/",
+    link: "https://www.frontendmentor.io/profile/WAudouin",
   },
   {
     name: "LinkedIn",
-    link: "https://linkedin.com/",
+    link: "https://www.linkedin.com/in/wilfreed-audouin/",
   },
   {
     name: "Twitter",
@@ -35,9 +35,9 @@ function App() {
     <div className="main">
       <SocialCard
         avatar={avatar}
-        name="Jessica Randall"
-        location="London, United Kingdom"
-        description="Front-end developer and avid reader."
+        name="Wilfreed Audouin"
+        location="Niort, France"
+        description="Front-end developer and avid sports viewer."
         links={socialLinks}
       />
     </div>
