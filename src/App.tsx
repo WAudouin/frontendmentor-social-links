@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import avatar from "./assets/images/avatar-jessica.jpeg";
+import SocialCard from "./components/SocialCard/SocialCard";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+export interface Link {
+  name: string;
+  link: string;
 }
 
-export default App
+const socialLinks: Link[] = [
+  {
+    name: "GitHub",
+    link: "https://github.com/",
+  },
+  {
+    name: "Frontend Mentor",
+    link: "https://frontendmentor.io/",
+  },
+  {
+    name: "LinkedIn",
+    link: "https://linkedin.com/",
+  },
+  {
+    name: "Twitter",
+    link: "https://x.com/",
+  },
+  {
+    name: "Instagram",
+    link: "https://instagram.com/",
+  },
+];
+
+function App() {
+  return (
+    <div className="main">
+      <SocialCard
+        avatar={avatar}
+        name="Jessica Randall"
+        location="London, United Kingdom"
+        description="Front-end developer and avid reader."
+        links={socialLinks}
+      />
+    </div>
+  );
+}
+
+export default App;

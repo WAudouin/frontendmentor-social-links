@@ -1,0 +1,56 @@
+.socialCard {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  background-color: var(--dark-grey);
+  border-radius: 12px;
+  padding: 40px;
+  box-sizing: border-box;
+
+  &__avatar {
+    border-radius: 50%;
+    width: 88px;
+  }
+
+  &__infos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &-name {
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: normal;
+    }
+
+    &-location {
+      font-weight: 600;
+      color: var(--neon-green);
+    }
+  }
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+
+    &-link {
+      background-color: var(--grey);
+      padding: 12px;
+      text-decoration: none;
+      color: var(--white);
+      font-weight: 700;
+      border-radius: 8px;
+      transition: all 0.3s;
+
+      &:hover {
+        color: var(--grey);
+        background-color: var(--neon-green);
+      }
+    }
+  }
+}
