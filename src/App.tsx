@@ -32,7 +32,7 @@ const socialLinks: Link[] = [
 
 function App() {
   return (
-    <div className="main">
+    <main>
       <SocialCard
         avatar={avatar}
         name="Wilfreed Audouin"
@@ -40,7 +40,7 @@ function App() {
         description="Front-end developer and avid sports viewer."
         links={socialLinks}
       />
-    </div>
+    </main>
   );
 }
 
